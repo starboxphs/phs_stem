@@ -1,7 +1,7 @@
 /* Embedding Pelham Font */
 @font-face {
     font-family: 'Pelham';
-    src: url('assets/fonts/Pelham.otf') format('opentype');
+    src: url('fonts/Pelham.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 }
@@ -9,7 +9,7 @@
 /* Embedding Nexa Regular */
 @font-face {
     font-family: 'Nexa Regular';
-    src: url('assets/fonts/Nexa-Regular.otf') format('opentype');
+    src: url('fonts/Nexa-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +17,7 @@
 /* Embedding Nexa Bold */
 @font-face {
     font-family: 'Nexa Bold';
-    src: url('assets/fonts/Nexa-Bold.otf') format('opentype');
+    src: url('fonts/Nexa-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
@@ -25,9 +25,16 @@
 /* Embedding Nexa Light */
 @font-face {
     font-family: 'Nexa Light';
-    src: url('assets/fonts/Nexa-Light.otf') format('opentype');
+    src: url('fonts/Nexa-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
+}
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Global Styles */
@@ -40,6 +47,82 @@ body {
     line-height: 1.6;
 }
 
+/* Header */
+.site-header {
+    background-color: #115740; /* Sport Green */
+    color: #FFFFFF; /* White */
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.site-title {
+    font-family: 'Pelham', serif;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #115740; /* Sport Green */
+    padding: 10px 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-item a {
+    font-family: 'Nexa Regular', sans-serif;
+    color: #FFFFFF; /* White */
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+}
+
+.nav-item a:hover {
+    background-color: #97D700; /* Spring Green */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3F4444; /* Shade Gray */
+    min-width: 160px;
+    z-index: 1;
+}
+
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #FFFFFF;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #97D700; /* Spring Green */
+}
+
 /* Paragraph Text */
 p {
     font-family: 'Nexa Regular', sans-serif;
@@ -50,6 +133,7 @@ p {
 /* Headings */
 h1 {
     font-family: 'Pelham', serif;
+    font-style: italic;
     color: #115740; /* Sport Green */
     margin-bottom: 15px;
     font-size: 2.5em;
@@ -79,18 +163,6 @@ h3 {
 .light-text {
     font-family: 'Nexa Light', sans-serif;
     font-weight: 300;
-}
-
-/* Links */
-a {
-    font-family: 'Nexa Regular', sans-serif;
-    color: #00843D; /* Spirit Green */
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #97D700; /* Spring Green */
 }
 
 /* Buttons */
@@ -179,13 +251,50 @@ td {
     color: #505759; /* Smoke Gray */
 }
 
+/* Main Content Area */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.column-left {
+    flex: 3;
+    padding: 15px;
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #3F4444; /* Shade Gray */
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.column-right {
+    flex: 1;
+    padding: 15px;
+    background-color: #F8F8F8;
+    border: 1px solid #3F4444; /* Shade Gray */
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .column-left, .column-right {
+        margin: 0 0 20px 0;
+    }
+}
+
 /* Footer */
-.footer {
+.site-footer {
     font-family: 'Nexa Regular', sans-serif;
     background-color: #3F4444; /* Shade Gray */
     color: #FFFFFF; /* White */
-    padding: 20px;
     text-align: center;
+    padding: 15px 20px;
 }
 
 /* Breadcrumbs */
@@ -225,59 +334,4 @@ td {
 .hover-highlight:hover {
     background-color: #97D700; /* Spring Green */
     color: #27251F; /* Space Black */
-}
-
-/* Navbar Styles */
-.navbar {
-    background-color: #115740; /* Sport Green */
-    padding: 10px 20px;
-}
-
-/* Navbar Links */
-.navbar a {
-    font-family: 'Nexa Regular', sans-serif;
-    color: #FFFFFF; /* White */
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.navbar a:hover {
-    background-color: #97D700; /* Spring Green */
-    color: #27251F; /* Space Black for contrast */
-}
-
-.navbar a.active {
-    border-bottom: 2px solid #97D700; /* Spring Green */
-}
-
-/* Search Bar */
-.navbar .search-bar {
-    font-family: 'Nexa Regular', sans-serif;
-    background-color: #FFFFFF; /* White */
-    border: 1px solid #505759; /* Smoke Gray */
-    padding: 5px;
-    border-radius: 4px;
-    transition: border 0.3s;
-}
-
-.navbar .search-bar:focus {
-    border: 1px solid #97D700; /* Spring Green */
-}
-
-/* CTA Button in Navbar */
-.navbar .cta-button {
-    font-family: 'Nexa Regular', sans-serif;
-    background-color: #115740; /* Sport Green */
-    color: #FFFFFF; /* White */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.navbar .cta-button:hover {
-    background-color: #97D700; /* Spring Green */
 }
