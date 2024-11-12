@@ -9,7 +9,7 @@
 /* Embedding Nexa Regular */
 @font-face {
     font-family: 'Nexa Regular';
-    src: url('fonts/Nexa-Regular.ttf') format('truetype');
+    src: url('fonts/Nexa-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +17,7 @@
 /* Embedding Nexa Bold */
 @font-face {
     font-family: 'Nexa Bold';
-    src: url('fonts/Nexa-Bold.ttf') format('truetype');
+    src: url('fonts/Nexa-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
@@ -25,7 +25,7 @@
 /* Embedding Nexa Light */
 @font-face {
     font-family: 'Nexa Light';
-    src: url('fonts/Nexa-Light.ttf') format('truetype');
+    src: url('fonts/Nexa-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }
