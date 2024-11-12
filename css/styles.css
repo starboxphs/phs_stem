@@ -6,23 +6,25 @@
     font-style: normal;
 }
 
-/* Embedding Nexa Fonts */
+/* Embedding Nexa Regular */
 @font-face {
-    font-family: 'Nexa';
+    font-family: 'Nexa Regular';
     src: url('fonts/Nexa-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+/* Embedding Nexa Bold */
 @font-face {
-    font-family: 'Nexa';
+    font-family: 'Nexa Bold';
     src: url('fonts/Nexa-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
+/* Embedding Nexa Light */
 @font-face {
-    font-family: 'Nexa';
+    font-family: 'Nexa Light';
     src: url('fonts/Nexa-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
@@ -30,7 +32,7 @@
 
 /* Global Styles */
 body {
-    font-family: 'Nexa', sans-serif;
+    font-family: 'Nexa Regular', sans-serif;
     color: #505759; /* Smoke Gray for text */
     background-color: #FFFFFF; /* White background */
     margin: 0;
@@ -38,15 +40,25 @@ body {
     line-height: 1.6;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Pelham', serif;
-    color: #115740; /* Sport Green */
+/* Paragraph Text */
+p {
+    font-family: 'Nexa Regular', sans-serif;
+    font-size: 1em;
     margin-bottom: 15px;
 }
 
+/* Headings */
 h1 {
+    font-family: 'Pelham', serif;
+    color: #115740; /* Sport Green */
+    margin-bottom: 15px;
     font-size: 2.5em;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Nexa Light', sans-serif;
+    color: #115740; /* Sport Green */
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -57,8 +69,21 @@ h3 {
     font-size: 1.75em;
 }
 
+/* Bold Text */
+.bold-text {
+    font-family: 'Nexa Bold', sans-serif;
+    font-weight: bold;
+}
+
+/* Light Text */
+.light-text {
+    font-family: 'Nexa Light', sans-serif;
+    font-weight: 300;
+}
+
 /* Links */
 a {
+    font-family: 'Nexa Regular', sans-serif;
     color: #00843D; /* Spirit Green */
     text-decoration: none;
     transition: color 0.3s;
@@ -70,7 +95,7 @@ a:hover {
 
 /* Buttons */
 button, .button {
-    font-family: 'Nexa', sans-serif;
+    font-family: 'Nexa Regular', sans-serif;
     background-color: #115740; /* Sport Green */
     color: #FFFFFF; /* White */
     border: none;
@@ -88,7 +113,7 @@ button:hover, .button:hover {
 
 /* Input Fields */
 input, textarea, select {
-    font-family: 'Nexa', sans-serif;
+    font-family: 'Nexa Regular', sans-serif;
     border: 1px solid #505759; /* Smoke Gray */
     padding: 8px;
     border-radius: 4px;
@@ -104,6 +129,7 @@ input:focus, textarea:focus, select:focus {
 
 /* Cards and Panels */
 .card {
+    font-family: 'Nexa Regular', sans-serif;
     background-color: #FFFFFF; /* White */
     border: 1px solid #3F4444; /* Shade Gray */
     border-radius: 8px;
@@ -114,6 +140,7 @@ input:focus, textarea:focus, select:focus {
 
 /* Alerts */
 .alert {
+    font-family: 'Nexa Regular', sans-serif;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
@@ -131,6 +158,7 @@ input:focus, textarea:focus, select:focus {
 
 /* Tables */
 table {
+    font-family: 'Nexa Regular', sans-serif;
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
@@ -148,12 +176,12 @@ th {
 }
 
 td {
-    font-family: 'Nexa', sans-serif;
     color: #505759; /* Smoke Gray */
 }
 
 /* Footer */
 .footer {
+    font-family: 'Nexa Regular', sans-serif;
     background-color: #3F4444; /* Shade Gray */
     color: #FFFFFF; /* White */
     padding: 20px;
@@ -162,7 +190,7 @@ td {
 
 /* Breadcrumbs */
 .breadcrumb {
-    font-family: 'Nexa', sans-serif;
+    font-family: 'Nexa Regular', sans-serif;
     padding: 10px;
     background-color: #F0F0F0;
     border-radius: 4px;
@@ -179,7 +207,7 @@ td {
 
 /* Highlight Boxes */
 .highlight {
-    font-family: 'Nexa', sans-serif;
+    font-family: 'Nexa Regular', sans-serif;
     background-color: #97D700; /* Spring Green */
     color: #27251F; /* Space Black */
     padding: 15px;
@@ -189,7 +217,7 @@ td {
 
 /* Interactive Elements */
 .hover-highlight {
-    font-family: 'Nexa', sans-serif;
+    font-family: 'Nexa Regular', sans-serif;
     color: #00843D; /* Spirit Green */
     transition: color 0.3s, background-color 0.3s;
 }
@@ -207,7 +235,7 @@ td {
 
 /* Navbar Links */
 .navbar a {
-    font-family: 'Nexa', sans-serif;
+    font-family: 'Nexa Regular', sans-serif;
     color: #FFFFFF; /* White */
     text-decoration: none;
     padding: 10px 15px;
@@ -226,7 +254,7 @@ td {
 
 /* Search Bar */
 .navbar .search-bar {
-    font-family: 'Nexa', sans-serif;
+    font-family: 'Nexa Regular', sans-serif;
     background-color: #FFFFFF; /* White */
     border: 1px solid #505759; /* Smoke Gray */
     padding: 5px;
@@ -240,7 +268,7 @@ td {
 
 /* CTA Button in Navbar */
 .navbar .cta-button {
-    font-family: 'Nexa', sans-serif;
+    font-family: 'Nexa Regular', sans-serif;
     background-color: #115740; /* Sport Green */
     color: #FFFFFF; /* White */
     padding: 10px 20px;
