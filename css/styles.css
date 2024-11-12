@@ -1,7 +1,7 @@
 /* Embedding Pelham Font */
 @font-face {
     font-family: 'Pelham';
-    src: url('fonts/Pelham-Regular.ttf') format('truetype');
+    src: url('fonts/Pelham.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
