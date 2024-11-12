@@ -1,0 +1,255 @@
+/* Embedding Pelham Font */
+@font-face {
+    font-family: 'Pelham';
+    src: url('fonts/Pelham-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Embedding Nexa Fonts */
+@font-face {
+    font-family: 'Nexa';
+    src: url('fonts/Nexa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('fonts/Nexa-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('fonts/Nexa-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Nexa', sans-serif;
+    color: #505759; /* Smoke Gray for text */
+    background-color: #FFFFFF; /* White background */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pelham', serif;
+    color: #115740; /* Sport Green */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+/* Links */
+a {
+    color: #00843D; /* Spirit Green */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #97D700; /* Spring Green */
+}
+
+/* Buttons */
+button, .button {
+    font-family: 'Nexa', sans-serif;
+    background-color: #115740; /* Sport Green */
+    color: #FFFFFF; /* White */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover, .button:hover {
+    background-color: #97D700; /* Spring Green */
+    transform: translateY(-2px);
+}
+
+/* Input Fields */
+input, textarea, select {
+    font-family: 'Nexa', sans-serif;
+    border: 1px solid #505759; /* Smoke Gray */
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #97D700; /* Spring Green */
+    outline: none;
+}
+
+/* Cards and Panels */
+.card {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #3F4444; /* Shade Gray */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Alerts */
+.alert {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #97D700; /* Spring Green */
+    color: #27251F; /* Space Black for text */
+}
+
+.alert-info {
+    background-color: #115740; /* Sport Green */
+    color: #FFFFFF; /* White */
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #3F4444; /* Shade Gray */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #115740; /* Sport Green */
+    color: #FFFFFF; /* White */
+}
+
+td {
+    font-family: 'Nexa', sans-serif;
+    color: #505759; /* Smoke Gray */
+}
+
+/* Footer */
+.footer {
+    background-color: #3F4444; /* Shade Gray */
+    color: #FFFFFF; /* White */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    font-family: 'Nexa', sans-serif;
+    padding: 10px;
+    background-color: #F0F0F0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    color: #115740; /* Sport Green */
+}
+
+.breadcrumb a:hover {
+    color: #97D700; /* Spring Green */
+}
+
+/* Highlight Boxes */
+.highlight {
+    font-family: 'Nexa', sans-serif;
+    background-color: #97D700; /* Spring Green */
+    color: #27251F; /* Space Black */
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Interactive Elements */
+.hover-highlight {
+    font-family: 'Nexa', sans-serif;
+    color: #00843D; /* Spirit Green */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.hover-highlight:hover {
+    background-color: #97D700; /* Spring Green */
+    color: #27251F; /* Space Black */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #115740; /* Sport Green */
+    padding: 10px 20px;
+}
+
+/* Navbar Links */
+.navbar a {
+    font-family: 'Nexa', sans-serif;
+    color: #FFFFFF; /* White */
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #97D700; /* Spring Green */
+    color: #27251F; /* Space Black for contrast */
+}
+
+.navbar a.active {
+    border-bottom: 2px solid #97D700; /* Spring Green */
+}
+
+/* Search Bar */
+.navbar .search-bar {
+    font-family: 'Nexa', sans-serif;
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #505759; /* Smoke Gray */
+    padding: 5px;
+    border-radius: 4px;
+    transition: border 0.3s;
+}
+
+.navbar .search-bar:focus {
+    border: 1px solid #97D700; /* Spring Green */
+}
+
+/* CTA Button in Navbar */
+.navbar .cta-button {
+    font-family: 'Nexa', sans-serif;
+    background-color: #115740; /* Sport Green */
+    color: #FFFFFF; /* White */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navbar .cta-button:hover {
+    background-color: #97D700; /* Spring Green */
+}
