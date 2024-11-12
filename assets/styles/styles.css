@@ -1,7 +1,7 @@
 /* Embedding Pelham Font */
 @font-face {
     font-family: 'Pelham';
-    src: url('fonts/Pelham.otf') format('opentype');
+    src: url('assets/fonts/Pelham.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 }
@@ -9,7 +9,7 @@
 /* Embedding Nexa Regular */
 @font-face {
     font-family: 'Nexa Regular';
-    src: url('fonts/Nexa-Regular.otf') format('opentype');
+    src: url('assets/fonts/Nexa-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +17,7 @@
 /* Embedding Nexa Bold */
 @font-face {
     font-family: 'Nexa Bold';
-    src: url('fonts/Nexa-Bold.otf') format('opentype');
+    src: url('assets/fonts/Nexa-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
@@ -25,7 +25,7 @@
 /* Embedding Nexa Light */
 @font-face {
     font-family: 'Nexa Light';
-    src: url('fonts/Nexa-Light.otf') format('opentype');
+    src: url('assets/fonts/Nexa-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }
