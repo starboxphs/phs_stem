@@ -1,35 +1,3 @@
-/* Embedding Pelham Font */
-@font-face {
-    font-family: 'Pelham';
-    src: url('fonts/Pelham.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-/* Embedding Nexa Regular */
-@font-face {
-    font-family: 'Nexa Regular';
-    src: url('fonts/Nexa-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Embedding Nexa Bold */
-@font-face {
-    font-family: 'Nexa Bold';
-    src: url('fonts/Nexa-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-/* Embedding Nexa Light */
-@font-face {
-    font-family: 'Nexa Light';
-    src: url('fonts/Nexa-Light.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-}
-
 /* General Reset */
 * {
     box-sizing: border-box;
@@ -71,6 +39,7 @@ body {
     font-family: 'Pelham', serif;
     font-size: 1.5em;
     font-style: italic;
+    color: #FFFFFF; /* White */
 }
 
 /* Navbar */
@@ -95,6 +64,7 @@ body {
     text-decoration: none;
     padding: 8px;
     display: block;
+    transition: background-color 0.3s;
 }
 
 .nav-item a:hover {
@@ -117,138 +87,11 @@ body {
     color: #FFFFFF;
     padding: 10px;
     text-decoration: none;
+    display: block;
 }
 
 .dropdown-content a:hover {
     background-color: #97D700; /* Spring Green */
-}
-
-/* Paragraph Text */
-p {
-    font-family: 'Nexa Regular', sans-serif;
-    font-size: 1em;
-    margin-bottom: 15px;
-}
-
-/* Headings */
-h1 {
-    font-family: 'Pelham', serif;
-    font-style: italic;
-    color: #115740; /* Sport Green */
-    margin-bottom: 15px;
-    font-size: 2.5em;
-}
-
-h2, h3, h4, h5, h6 {
-    font-family: 'Nexa Light', sans-serif;
-    color: #115740; /* Sport Green */
-    margin-bottom: 15px;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.75em;
-}
-
-/* Bold Text */
-.bold-text {
-    font-family: 'Nexa Bold', sans-serif;
-    font-weight: bold;
-}
-
-/* Light Text */
-.light-text {
-    font-family: 'Nexa Light', sans-serif;
-    font-weight: 300;
-}
-
-/* Buttons */
-button, .button {
-    font-family: 'Nexa Regular', sans-serif;
-    background-color: #115740; /* Sport Green */
-    color: #FFFFFF; /* White */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-button:hover, .button:hover {
-    background-color: #97D700; /* Spring Green */
-    transform: translateY(-2px);
-}
-
-/* Input Fields */
-input, textarea, select {
-    font-family: 'Nexa Regular', sans-serif;
-    border: 1px solid #505759; /* Smoke Gray */
-    padding: 8px;
-    border-radius: 4px;
-    width: 100%;
-    margin-bottom: 15px;
-    transition: border 0.3s;
-}
-
-input:focus, textarea:focus, select:focus {
-    border-color: #97D700; /* Spring Green */
-    outline: none;
-}
-
-/* Cards and Panels */
-.card {
-    font-family: 'Nexa Regular', sans-serif;
-    background-color: #FFFFFF; /* White */
-    border: 1px solid #3F4444; /* Shade Gray */
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Alerts */
-.alert {
-    font-family: 'Nexa Regular', sans-serif;
-    padding: 15px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
-
-.alert-success {
-    background-color: #97D700; /* Spring Green */
-    color: #27251F; /* Space Black for text */
-}
-
-.alert-info {
-    background-color: #115740; /* Sport Green */
-    color: #FFFFFF; /* White */
-}
-
-/* Tables */
-table {
-    font-family: 'Nexa Regular', sans-serif;
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-th, td {
-    border: 1px solid #3F4444; /* Shade Gray */
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #115740; /* Sport Green */
-    color: #FFFFFF; /* White */
-}
-
-td {
-    color: #505759; /* Smoke Gray */
 }
 
 /* Main Content Area */
@@ -297,41 +140,45 @@ td {
     padding: 15px 20px;
 }
 
-/* Breadcrumbs */
-.breadcrumb {
+/* Additional Classes for Typography */
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Nexa Regular', sans-serif;
-    padding: 10px;
-    background-color: #F0F0F0;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
-
-.breadcrumb a {
     color: #115740; /* Sport Green */
+    margin-bottom: 15px;
 }
 
-.breadcrumb a:hover {
-    color: #97D700; /* Spring Green */
+h1 {
+    font-family: 'Pelham', serif;
+    font-style: italic;
+    font-size: 2.5em;
 }
 
-/* Highlight Boxes */
-.highlight {
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+p {
+    margin-bottom: 15px;
     font-family: 'Nexa Regular', sans-serif;
-    background-color: #97D700; /* Spring Green */
-    color: #27251F; /* Space Black */
-    padding: 15px;
+}
+
+/* Buttons */
+button, .button {
+    font-family: 'Nexa Regular', sans-serif;
+    background-color: #115740; /* Sport Green */
+    color: #FFFFFF; /* White */
+    border: none;
+    padding: 10px 20px;
     border-radius: 4px;
-    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Interactive Elements */
-.hover-highlight {
-    font-family: 'Nexa Regular', sans-serif;
-    color: #00843D; /* Spirit Green */
-    transition: color 0.3s, background-color 0.3s;
-}
-
-.hover-highlight:hover {
+button:hover, .button:hover {
     background-color: #97D700; /* Spring Green */
-    color: #27251F; /* Space Black */
+    transform: translateY(-2px);
 }
